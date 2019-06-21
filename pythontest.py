@@ -6,6 +6,3 @@ while a<100:
         a = a + 1
     else:
         a = a + 1
-
-print("变更1111111")
-print("变更2222222")
