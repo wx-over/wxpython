@@ -1,7 +1,2 @@
-# wxpython
-* test111
-
-First Header | Second Header
------------- | -------------
-Content cell 1 | Content cell 2
-Content column 1 | Content column 2
+# Python Study
+# Welcome guidance
