@@ -1,4 +1,4 @@
-
+import re
 a1 = 'QYTANG'
 a2 = '\'day'
 a3 = ' 2014-9-28'
@@ -48,3 +48,15 @@ print(line5)
 print(line6)
 print('='*length)
 
+str1 = '  Port-channel1.189     192.168.189.254  YES     CONFIG  up  up  '
+
+print(str1)
+
+abc = re.match('(\w+.\w+\.\d+)\s+(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s+\w+\s+\w+\s+(\w+)',str1.strip()).groups()
+
+print(abc)
+
+print('-'*70)
+print('{0:<10}:{1:<10}'.format('接口',abc[0]))
+print('{0:<10}:{1:<10}'.format('IP地址',abc[1]))
+print('{0:<10}:{1:<10}'.format('状态',abc[2]))
